@@ -1,0 +1,50 @@
+---
+layout: default
+permalink: /consulting/
+title: Consulting
+---
+
+<!-- <section class="hero-4" id="home" style="background-image: url({{site.baseurl}}/images/consulting-header.jpg); background-repeat: no-repeat; background-size: cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="hero-box">
+                    <div class="absolute head-text">
+                        <h1 class="text-center">{{page.title}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<div class="relative mt-100 pb-20">
+    <div class="job-app-image" style="background-image: url({{site.baseurl}}/images/consulting-header.jpg)"></div>
+            <div class="absolute head-text">
+            <h1 class="text-center">{{page.title}}</h1>
+            </div>
+</div>
+
+<div class="container pb-80">
+    <div class="pt-80">
+    <div class="masonry-container">
+        {% for post in site.consulting %}
+        <a href="{{post.url}}">
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="{{site.baseurl}}/images/consulting/consulting.jpg" alt="{{post.title}}">
+                    <div class="caption">
+                    <h4>{{post.title}}</h4>
+                    <p>{{post.description | truncate: 160}}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+</div>
+
+
+
+

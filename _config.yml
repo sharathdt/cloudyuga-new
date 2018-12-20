@@ -1,0 +1,102 @@
+title: CloudYuga
+description: We provide trainings in Docker, Kubernetes, Mesos Marathon, Container Security, GO Language, Advance Linux Administration etc.
+url: "https://cloudyuga.guru"
+logo: "https://cloudyuga.guru/img/Cloud-Yuga-Guru-Logox60.png"
+
+
+
+facebook: "https://www.facebook.com/cloudyuga.guru"
+twitter: "https://twitter.com/cloudyuga"
+
+
+analytics: UA-102630530-1
+disqus: cloudyuga
+
+
+permalink: "/blog/:title/"
+
+paginate: 9
+paginate_path: "/blog/all/page:num/"
+
+
+collections:
+    trainings:
+        output: true
+        permalink: "/trainings/:title/"
+    webinars:
+        output: true
+        permalink: "/webinars/:title/"
+    consulting:
+        output: true
+        permalink: "/consulting/:title/"
+    careers:
+        output: true
+        permalink: "/careers/:title/"
+
+future: true
+
+exclude:
+    - _temp
+    - .sass-cache
+
+include:
+    - _pages
+
+sass:
+ style: compressed
+
+
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+
+
+authors:
+      Neependra:
+        display_name: Neependra
+        about: Founder and Principal Consultant
+        email: mailto:neependra@cloudyug.guru
+        facebook: https://www.facebook.com/neependra.khare
+        linkedin: https://www.linkedin.com/in/neependra
+        twitter: https://twitter.com/neependra
+        avatar: /img/neependra-khare.jpg
+
+      Shiju:
+        display_name: Shiju
+        about: Principal Consultant
+        email: mailto:gophermonk@gmail.com
+        facebook: https://www.facebook.com/shijuvar
+        linkedin: https://www.linkedin.com/in/shijuvar
+        twitter: https://twitter.com/shijucv
+        avatar: /img/Shiju-Varghese.png
+
+      sumit:
+        display_name: Sumit Murari
+        about: Senior Consultant
+        email: mailto:sumit@cloudyuga.guru
+        linkedin: https://linkedin.com/in/murarisumit
+        avatar: /img/sumit-murari.jpg
+        website: https://sumit.murari.me
+
+      vishal:
+        display_name: Vishal Ghule
+        about: Software Engineer
+        email: mailto:vishal@cloudyuga.guru
+        linkedin: https://linkedin.com/in/vishal-ghule
+        twitter: https://twitter.com/thevishalghule
+        avatar: /img/vishal-ghule.jpg
+
+plugins:
+    - jekyll-seo-tag
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jekyll-paginate

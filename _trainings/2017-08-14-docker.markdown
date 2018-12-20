@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "Basic Docker Workshop"
+description: This course covers basic level of Docker. We will start looking to container fundamentals and then do a deep dive into Docker architecture, container and image operations. 
+date:   2017-08-14 10:51:47 +0530
+image: docker.jpg 
+categories: 
+    - classroom
+color: BF360C
+author: Neependra
+razor-pay:
+      name: Neependra Khare
+      text: Register 
+      description: Sign up for Docker Workshop.
+      amount: 1298000 
+      currency: INR
+paypal:
+    amount: 400
+
+session: 
+    - 15th Dec'18
+---
+
+![]({{site.baseurl}}/images/trainings/docker.jpg)
+
+## **Overview** 
+
+This course covers basic level of Docker. We will start looking to container fundamentals and then do a deep dive into Docker architecture, container and image operations. We will see how manage network and data with Docker. We’ll see how we can create multi container applications using Docker Compose. This would be a pre-requisite for Kubernetes classses.
+
+**Date**: 16th Dec'18
+
+**Duration**: 1 Days
+
+**Venue** : Bangalore
+
+## **Prerequisitess**
+None. We'll start from very basics and anyone with basic Linux skills can join this workshop.
+
+### **About the Trainer - [Vishal Ghule](https://www.linkedin.com/in/vishal-ghule)** 
+- Software Engineer and Trainer at [CloudYuga](http://cloudyuga.guru/)
+- Certified Kubernetes Administrator
+
+### **Containers (Docker) Workshop** 
+  * Container Fundamentals
+      * What/Why/Where
+      * Container Vs VMs
+      * Container building blocks
+  * Container Runtimes 
+      * runC
+      * Docker
+      * Rkt
+  * Docker Architecture
+  * DockerHub/Docker Store
+  * Docker Installation
+  * Docker Machine
+  * Docker Container Operations
+  * Docker Image Operations
+  * Creating Images with Dockerfiles
+  * Docker Multi-stage builds
+  * Setting up Internal Docker Registry
+  * Data Management with Docker using Volumes
+  * Docker Networking Model
+  * Docker Networking Drivers 
+      * Bridge
+      * Host
+      * None
+      * Overlay
+      * MACVLan
+  * Docker APIs
+  * Building Multi-container Application with Docker Compose
+  * Docker use-cases 
+      * Dev
+      * QA
+      * Ops
+  * Docker Eco-system and Community

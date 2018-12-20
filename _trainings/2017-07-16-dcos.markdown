@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "DC/OS"
+description: We will cover DC/OS 
+date:   2017-07-16 10:51:47 +0530
+categories: mesos dcos 
+categories: classroom
+image: dcos.jpg 
+color: BF360C
+author: Neependra
+description: "In this course we would cover basic and advance DC/OS, with focus on containerised applications which are deployed using Marathon framework. We would look at different concept of DC/OS and how it is related to Mesos."
+school:
+      text: Enquire
+      link: https://cloudyuga.guru/contact/
+published: false
+---
+
+
+![]({{site.baseurl}}/images/trainings/dcos.jpg)
+
+## **Overview** 
+
+
+
+In this course we would cover basic and advance DC/OS, with focus on containerised applications which are deployed using Marathon framework. We would look at different concept of DC/OS and how it is related to Mesos. We would deploy DC/OS on cloud and then deploy different applications. We would explore service discovery, blue-green deployment, canary deployment and auto-scaling as well. We would also explore storage and network management with DC/OS. At last we would cover logging, monitoring and troubleshooting with DC/OS.&nbsp;
+
+**Date**: TBD
+
+**Venue** : Bangalore
+
+
+### **About the Trainer - [Neependra Khare](https://twitter.com/neependra)** 
+- Founder and Principal Consultant at [CloudYuga](http://cloudyuga.guru/)
+- More than 13 years of IT experience  
+- Organiser of [Docker Meetup in Bangalore](https://www.meetup.com/Docker-Bangalore/) for about 4 years
+- Authored [Docker Cookbook](https://www.packtpub.com/virtualization-and-cloud/docker-cookbook) in 2015
+- Co-authored [Introduction to Cloud Infrastructure Technologies](https://www.edx.org/course/introduction-cloud-infrastructure-linuxfoundationx-lfs151-x) MOOC on Edx for the Linux Foundation in 2016
+- Pubished [online courses on Docker and other container technologies](http://school.cloudyuga.guru) in 2017
+- Authored [Introduction to Kubernetes](http://edx.org/course/introduction-kubernetes-linuxfoundationx-lfs158x) MOOC on Edx for the Linux Foundation in 2017
+### **Pre-requisites&nbsp;**
+
+Prior knowledge of Docker or any container technologies is required.
+
+### **Course Content&nbsp;** 
+
+  * Introduction to DC/OS 
+      * Architecture&nbsp;
+      * DC/OS and Mesos
+      * Features&nbsp;
+      * Core components&nbsp;
+  * Installing DC/OS on Cloud&nbsp;
+  * Accessing DC/OS 
+      * CLI
+      * GUI
+  * DC/OS Concepts&nbsp; 
+      * Node
+      * Cluster
+      * Network&nbsp;
+      * Service
+      * Job
+      * Scheduler&nbsp;
+      * Packages
+  * Identity and Access Management with DC/OS
+  * Managing DC/OS Services
+  * Deploying applications with Marathon
+  * Deploy a Multi-container Application with DC/OS
+  * Marathon REST API
+  * Service discovery 
+      * Mesos-DNS
+      * Named VIPs
+      * Marathon-lb
+  * Accessing application from the external world 
+      * Marathon-lb
+      * Load Balancing&nbsp;
+  * Auto-scaling Marathon Services 
+      * CPU/Memory
+      * Microscaling
+      * Requests/sec
+      * Autoscaling with Vamp.ip
+  * Blue-Green Deployment with DC/OS
+  * Application Health Monitoring
+  * Running Stateful Services
+  * DC/OS overlay network and Virtual Network
+  * Logging&nbsp;
+  * Managing permission
+  * Troubleshooting

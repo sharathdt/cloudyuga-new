@@ -5,6 +5,10 @@
 .intro {
   .carousel-item {
     height: 600px;
+
+     @include media-query($on-palm) {
+          height: 260px;
+     }
   }
 
   .carousel-indicators {
@@ -39,6 +43,17 @@
      left: 800px;
   }
 }
+
+
+.testimonial {
+  .carousel-control-prev, .carousel-control-next {
+    @include media-query($on-palm) {
+         display: none;
+    }
+  }
+}
+
+
 
 
 

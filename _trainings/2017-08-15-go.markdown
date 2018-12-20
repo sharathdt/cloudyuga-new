@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Go Training"
+title-center: yes
+date:   2017-08-07 10:51:47 +0530
+categories: Go 
+image: go.jpg
+categories: classroom 
+color: BF360C
+author: Shiju
+description: "In this course you will learn the Go programming language and the Go ecosystem, which lets you build real-world applications with Go." 
+#razor-pay:
+#      name: Neependra Khare
+#      text: Register 
+#      description: Sign up for Go Workshop.
+#      amount: 1500000
+#      currency: INR
+school:
+      text: Enquire
+published: false
+---
+
+<iframe class="video" src="https://player.vimeo.com/video/228531637" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+## **Overview** 
+
+In this course you will learn the Go programming language and the Go ecosystem, which lets you build real-world applications with Go. You will get a deep dive into Go’s unique features such as type system and concurrency. You will also get core fundamentals on Go web programming for building real-world web applications and RESTful services. After the completion of course you can start to build backend systems in Go.
+
+**Date**: &nbsp;**23rd and 24th September'17**
+
+**Venue** : Bangalore
+
+
+## **About the Trainer**
+
+<p class="m_5399022079493017632gmail-ng-scope">
+  <a href="https://twitter.com/shijucv">Shiju Varghese</a> is a Solutions Architect focused on building highly scalable cloud-native applications with a special interest in APIs, Microservices, containerized architecture, and distributed systems. He currently specializes in Go, Google Cloud and container technologies. He is an early adopter of Go programming language, and provides consulting and training for building scalable backend systems and Microservices using Go ecosystem. He has been a mentor to various start-ups and enterprises for the technology transformation to Go. He worked extensively in C# and Node.js before adopting Go as the primary technology stack. He has authored the book &#8220;<a href="http://www.apress.com/9781484210536">Web Development with Go</a> &#8221; and &#8220;<a href="http://www.springer.com/in/book/9781484211885">Go Recipes</a> &#8220;, both published by Apress.&nbsp;He has been a speaker at <a href="http://www.gophercon.in/">GopherCon India</a> (Go Conference in India) for 2015, 2016 and 2017.
+</p>
+
+## **Go Programming Workshop**
+
+  * Introduction to Go 
+      * Introduction to Go.
+      * The design philosophy of Go.
+      * Go Ecosystem.
+      * Setting up Go workspace.
+  * Go language fundamentals 
+      * Language fundamentals.
+      * Functions.
+      * Arrays.
+      * Slices.
+      * Maps.
+      * Defer, Panic and Recover.
+      * Error handling.
+  * Go Package system and Tooling 
+      * A deep dive into package ecosystem in Go.
+      * Go Tools.
+      * Using Go standard library packages.
+      * Using third-party packages.
+      * Managing package dependencies.
+  * Go Type System 
+      * A deep dive into Go’s type system.
+      * Structs.
+      * Adding Behaviours to Structs.
+      * Value Receivers and Pointer Receivers.
+      * Interfaces.
+      * Composition of types.
+      * Providing extensibility with interfaces.
+  * Concurrency programming with Goroutines and Channels 
+      * Concurrency in Go
+      * Goroutines
+      * Channels
+      * Unbuffered Channels
+      * Buffered Channels
+  * Go Web Programming 
+      * A deep dive into Go&#8217;s HTTP programming (Covering basics to most advanced topics including internals of HTTP package).
+      * Using third-party libraries for extending Go’s http package.
+      * Practical guidance for building real-world web apps and RESTful services.
+  * HTTP Middleware 
+      * A deep dive into HTTP Middleware programming.
+      * Implementing cross-cutting concerns with HTTP Middleware.
+      * HTTP Middleware programming using popular third-party packages.
+  * An Architectural reference for building real-world web apps and RESTful APIs with Go
+  * Debugging Go programs.
+  

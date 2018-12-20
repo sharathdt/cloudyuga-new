@@ -1,0 +1,118 @@
+intro:
+    header:
+        normal: Level-Up To Be
+        highlighted: Cloud Native
+    sub-header: With our trainings and consulting offerings, we help companies and individuals to adopt cloud native practices.
+    button:
+        text: Know More
+        link: "#process"
+
+intro-slider:
+    header:
+        normal: "India's First"
+        highlighted: "<br>KCSP & KTP Certified Company!"
+    sub-header: Cloudyuga is the first Indian company to become an official Kubernetes Certified Service Provider & Kubernetes Training Partner.
+    button:
+        text: Know More
+        link: "#"
+
+
+offerings:
+    - title: Trainings
+      description: We provide trainings on Docker, Kubernetes, DC/OS, Go Language etc.
+      icon: ion-code
+
+    - title: Consulting
+      description: "With our rich industry experience we'll help you adopt latest cloud and container technologies, so you can meet your business goals."
+      icon: ion-briefcase
+
+    - title: Building Case Studies
+      description: We can help you building case-studies, do product comparisons etc for cloud related products.
+      icon: ion-compose
+
+
+customers:
+    - title: HP
+      image: /img/hp-enterprise-s.png
+
+    - title: EDB
+      image: /img/edb-s.png
+
+    - title: Rakuten
+      image: /img/Rakuten-s.png
+
+    - title: Cisco
+      image: /img/Cisco_logo.png
+
+    - title: VMware
+      image: /img/logoGrey.png
+
+    - title: Mecedes Benz
+      image: /img/Mercedes_benz-2.png
+
+    - title: Reliance Jio
+      image: /img/reliance-jio.png
+
+    - title: Intuit
+      image: /img/logo-intuit-preferred.png
+
+
+testimonials:
+    - name: Vishal Sinha
+      title: Senior Architect - DevOps @Ellucian
+      image: /images/site/Vishal.jpg
+      review: I have taken several courses and this is by far the most organized and informative. Thanks Neependra Khare for creating a wonderful/full practical (hands-on) course.
+
+    - name: Partheeban Palanisamy
+      title: Technical Consultant - @HPE
+      image: /images/site/Partheeban.jpg
+      review: Neependra has excellent knowledge on Docker and Kubernetes, the sessions were excellent. I would definitely recommend his training sessions to others.
+
+    - name: Ajeet S Raina
+      title: Docker Captain, {Code} Catalysts - Dell EMC R&D
+      image: /images/site/Ajeet.jpg
+      review: Kudos to CY School for bringing self-paced learning platform for container enthusiasts to keep abreast of latest changes in the container space. My 100% recommendation for all developers & operations team to try & learn new stuffs coming out of CY Garage. Well done @neependra & @CloudYuga Team.
+
+
+
+about:
+    - name: Neependra Khare
+      title: Founder & Principal Consultant
+      about: "Neependra is the founder & principal consultant at CloudYuga, which offers training & consulting for corporates on various cloud-native & DevOps technologies and practices.<br> He is a Certified Kubernetes Administrator, an instructor with The Linux Foundation and edX on Docker and Kubernetes, author of the book 'Docker Cookbook (2015)', speaker at multiple DevOps conferences and organizer of the Docker Bangalore Meetup group."
+      image: /img/neependra-khare.jpg
+      facebook: https://www.facebook.com/neependra.khare
+      twitter: https://twitter.com/neependra
+      linkedin: https://www.linkedin.com/in/neependra
+      github: https://github.com/nkhare
+      website: http://neependra.net
+
+    - name: Vishal Ghule
+      title: Software Engineer
+      about: "Vishal is the Software Engineer at CloudYuga, He is  a Certified Kubernetes Administrator, speaker at multiple Meetup groups.<br/>He is expertise in the DevOps solutions like Kubernetes, Docker, Terraform, Jenkins etc.  He completed Master of Technology in Computer Science Engineering from RIT,Rajaramnagar. He is also the author of few research papers in Virtualization and Cloud Technologies."
+      image: /img/vishal-ghule.jpg
+      facebook:
+      twitter: https://twitter.com/theVishalGhule
+      linkedin: https://www.linkedin.com/in/vishal-ghule
+      github: https://github.com/vishalcloudyuga
+      website:
+
+    - name: Sumit Murari
+      title: Senior Consultant
+      about: "Sumit is a senior consultant at CloudYuga. DevSecOps practitioner with extensive experience in various cloud technologies and providers, a certified kubernetes administrator.<br/>Primarily interested in use and scalability of container technology."
+      image: /img/sumit-murari.jpg
+      linkedin: https://linkedin.com/in/murarisumit
+      github: https://github.com/murarisumit
+      website: https://sumit.murari.me/
+
+
+address:
+    - line: '#1746'
+    - line: '#1746'
+    - line: '#1746'
+    - line: '#1746'
+
+test:
+    - title: Container Basics
+      description: Test your container technology skill.
+      image: container-test.png # If no image > default superman image will be shown.
+      link: /quiz/container-basics/

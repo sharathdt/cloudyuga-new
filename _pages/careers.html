@@ -1,0 +1,42 @@
+---
+title: Careers
+author: Neependra
+layout: default
+permalink: /careers/
+---
+
+
+<div class="relative mt-100 pb-20">
+    <div class="job-app-image" style="background-image: url({{site.baseurl}}/images/job-application.jpg)"></div>
+            <div class="absolute head-text">
+            <h1 class="text-center">{{page.title}}</h1>
+            </div>
+</div>
+
+
+<br>
+
+<div class="container pb-80">
+<div class="instr archive plain-links">  
+<div class="masonry-container">
+    {% assign sp = site.careers | reverse  %}
+    {% for post in sp %}
+       <a class="" href="{{site.baseurl}}{{post.url}}">
+        <div class="item">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="job-title">{{post.title}}</h4>
+                    <hr>
+                    <p>{{post.short-desc}}</p>
+                    <p>{{post.description | truncate: 160}}</p>
+                    <hr>
+                    <div class="text-center apply" ><strong>Apply</strong></div>
+                </div>
+                
+            </div>
+        </div>
+        </a>
+    {% endfor %}
+    </div>  
+    </div>
+</div>

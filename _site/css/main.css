@@ -13183,6 +13183,9 @@ figure.snip1192 .author h5 span {
 
 .intro .carousel-item {
   height: 600px; }
+  @media screen and (max-width: 600px) {
+    .intro .carousel-item {
+      height: 260px; } }
 .intro .carousel-indicators {
   bottom: -50px; }
 
@@ -13202,6 +13205,10 @@ figure.snip1192 .author h5 span {
   bottom: 0;
   right: 0;
   left: 800px; }
+
+@media screen and (max-width: 600px) {
+  .testimonial .carousel-control-prev, .testimonial .carousel-control-next {
+    display: none; } }
 
 .dropdown-submenu {
   position: relative; }

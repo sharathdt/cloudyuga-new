@@ -1,0 +1,43 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+  <main>
+
+
+    {{content}}
+
+
+  </main>
+
+{% include footer.html %}
+  <!-- Core -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/popper/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.0.1"></script>
+{% if page.url == '/' %}
+  <script>
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.on('play', function() {
+      $("#carouselExampleIndicators").carousel('pause');
+      console.log('stop carousel');
+    });
+  </script>
+{% endif %}
+
+</body>
+
+</html>
