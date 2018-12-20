@@ -3,8 +3,6 @@ description: We provide trainings in Docker, Kubernetes, Mesos Marathon, Contain
 url: "https://cloudyuga.guru"
 logo: "https://cloudyuga.guru/img/Cloud-Yuga-Guru-Logox60.png"
 
-
-
 facebook: "https://www.facebook.com/cloudyuga.guru"
 twitter: "https://twitter.com/cloudyuga"
 
@@ -36,7 +34,6 @@ collections:
 future: true
 
 exclude:
-    - _temp
     - .sass-cache
 
 include:

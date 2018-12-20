@@ -1,7 +1,3 @@
-.footer {
-  background: #333;
-}
-
 .intro {
   .carousel-item {
     height: 600px;
@@ -120,4 +116,17 @@
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-menu .dropdown-item > i, .dropdown-menu .dropdown-item > svg {
+    margin-right: 0;
+}
+
+
+
+
+
+
+.footer {
+  background: #191d2f;
 }
