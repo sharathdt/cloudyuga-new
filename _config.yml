@@ -1,15 +1,18 @@
 title: CloudYuga
 description: We provide trainings in Docker, Kubernetes, Mesos Marathon, Container Security, GO Language, Advance Linux Administration etc.
+footer-description: We are here to help you learn and deploy cloud native application using containers. With our trainings, you would get in-depth knowledge on the subject and with our consulting services, we can guide to do the deployment.
 url: "https://cloudyuga.guru"
-logo: "https://cloudyuga.guru/img/Cloud-Yuga-Guru-Logox60.png"
-
+logo: "/img/cloudyuga-logo.svg"
+phone: "+91 8861001308"
+email: "neependra@cloudyuga.guru"
 facebook: "https://www.facebook.com/cloudyuga.guru"
 twitter: "https://twitter.com/cloudyuga"
-
+github: "https://github.com/cloudyuga/"
+feed: "/feed.xml"
 
 analytics: UA-102630530-1
 disqus: cloudyuga
-
+mailchimp: //guru.us13.list-manage.com/subscribe/post?u=e759d8392b3869df85162f2b8&id=e6f0938d13
 
 permalink: "/blog/:title/"
 
