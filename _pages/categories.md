@@ -13,10 +13,10 @@ title: Categories
       <a name="{{ category_name | slugize }}"></a>  
      <h2 class="category-head">{{ category_name | capitalize}}</h2>
        
-       
+
     <ul>
     {% for post in site.categories[category_name] %}
-    
+
     <li>
      <article class="archive-item">
       <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>

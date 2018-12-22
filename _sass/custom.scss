@@ -1,3 +1,13 @@
+img {
+  max-width: 100%;
+}
+.bg-egg {
+    background-color: #fefefe !important;
+}
+.headroom--not-top {
+    background-color: #5e72e4 !important;
+}
+
 .intro {
   .carousel-item {
     height: 600px;
@@ -160,4 +170,32 @@
    }
  }
 
+}
+
+
+.about-social-links {
+  li {
+    margin-right: 10px;
+  }
+}
+
+
+.pages {
+  .separator {
+    z-index: 0;
+  }
+
+  .mart-300 {
+    margin-top: -300px;
+  }
+}
+
+
+.map {
+  width: 100%;
+  height: 360px;
+  border: 4px solid #ddd;
+  @include media-query($on-palm) {
+    height: 250px;
+  }
 }
