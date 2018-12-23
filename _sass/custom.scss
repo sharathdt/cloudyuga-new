@@ -150,6 +150,9 @@ img {
 
   ul {
      padding-left: 0.5em;
+       @include media-query($on-palm) {
+         padding-left: 1em;
+       }
   }
 
   .social {

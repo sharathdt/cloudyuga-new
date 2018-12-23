@@ -19,6 +19,7 @@
   </main>
 
 {% include footer.html %}
+{% include register.html %}
   <!-- Core -->
   <script src="{{site.baseurl}}/assets/vendor/jquery/jquery.min.js"></script>
   <script src="{{site.baseurl}}/assets/vendor/popper/popper.min.js"></script>
@@ -33,7 +34,7 @@
 
     player.on('play', function() {
       $("#carouselExampleIndicators").carousel('pause');
-      console.log('stop carousel');
+      
     });
   </script>
 {% endif %}
