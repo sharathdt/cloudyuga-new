@@ -10,38 +10,21 @@
     <div class="row row-grid align-items-center pb-lg">
       <div id="carouselTestimonial" class="carousel slide mb-md" data-ride="carousel">
       <div class="carousel-inner">
-      <div class="carousel-item active">
-        <figure class="snip1192">
-          <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+
+      {% for item in site.data.data.testimonials %}
+      <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
+        <figure class="webjeda">
+          <blockquote>{{item.review}} </blockquote>
           <div class="author">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1" />
-            <h5>Pelican Steve <span> LittleSnippets</span></h5>
+            <img src="{{item.image}}" alt="sq-sample1" />
+            <h5>{{item.name}} <span> {{item.title}}</span></h5>
           </div>
         </figure>
 
       </div>
-      <div class="carousel-item">
+      {% endfor %}
 
-              <figure class="snip1192 hover">
-                <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.</blockquote>
-                <div class="author">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample24.jpg" alt="sq-sample24" />
-                  <h5>Max Conversion<span> LittleSnippets</span></h5>
-                </div>
-              </figure>
 
-      </div>
-      <div class="carousel-item">
-
-              <figure class="snip1192">
-                <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
-                <div class="author">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample29.jpg" alt="sq-sample29" />
-                  <h5>Eleanor Faint<span> LittleSnippets</span></h5>
-                </div>
-              </figure>
-
-      </div>
       </div>
       <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -114,6 +97,7 @@
 
 
     </div>
+
   </div>
   <!-- SVG separator -->
   <div class="separator separator-bottom separator-skew zindex-100">

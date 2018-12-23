@@ -23,6 +23,11 @@ img {
 }
 
 
+.card-dark {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+
 .card-lift--hover {
   &:hover {
       transform: translateY(-10px);

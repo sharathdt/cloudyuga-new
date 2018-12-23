@@ -2,92 +2,63 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6 order-lg-1">
-            <!-- <div class="d-flex px-3">
-              <div>
-                <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i class="ni ni-building text-primary"></i>
-                </div>
-              </div>
-              <div class="pl-4">
-                <h4 class="display-3 text-white">Blogs</h4>
-                <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-              </div>
-            </div> -->
             <div class="pl-4">
-                <h4 class="display-3 text-white text-center">Blogs</h4>
+                <h4 class="display-3 text-white">Latest Blogs</h4>
             </div>
-            <div class="card shadow shadow-lg--hover mt-5">
+
+          {% for post in site.posts limit: 3 %}
+            <div class="card card-dark shadow shadow-lg--hover mt-4">
               <div class="card-body">
                 <div class="d-flex px-3">
-                  <div>
-                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                      <i class="ni ni-satisfied"></i>
-                    </div>
-                  </div>
-                  <div class="pl-4">
-                    <h5 class="title text-success">Awesome Support</h5>
-                    <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                    <a href="#" class="text-success">Learn more</a>
+                  <div class="">
+                    <h5 class="title text-success">{{post.title | truncate: 40}}</h5>
+                      {% if post.description %}
+                      <p>{{post.description | strip_html | strip_newlines | truncate: 80}}</p>
+                      {% else %}
+                      <p>{{post.content | strip_html | strip_newlines | truncate: 80}}</p>
+                      {% endif %}
+                    <a href="#" class="text-success">Read more</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card shadow shadow-lg--hover mt-5">
-              <div class="card-body">
-                <div class="d-flex px-3">
-                  <div>
-                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                      <i class="ni ni-active-40"></i>
-                    </div>
-                  </div>
-                  <div class="pl-4">
-                    <h5 class="title text-warning">Modular Components</h5>
-                    <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                    <a href="#" class="text-warning">Learn more</a>
-                  </div>
+          {% endfor %}
+          <div class="text-center">
+            <a href="{{site.baseurl}}/blog/" class="btn btn-outline-success mt-4">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 order-lg-1">
+        <div class="pl-4">
+        <h4 class="display-3 text-white">Webinars</h4>
+        </div>
+
+        {% for post in site.webinars limit: 3 %}
+          <div class="card card-dark shadow shadow-lg--hover mt-4">
+            <div class="card-body">
+              <div class="d-flex px-3">
+                <div class="">
+                  <h5 class="title text-success">{{post.title | truncate: 50}}</h5>
+
+                  {% if post.description %}
+                  <p>{{post.description | strip_html | strip_newlines | truncate: 80}}</p>
+                  {% else %}
+                  <p>{{post.content | strip_html | strip_newlines | truncate: 80}}</p>
+                  {% endif %}
+
+                  <a href="#" class="text-success">Read more</a>
                 </div>
               </div>
             </div>
           </div>
+        {% endfor %}
 
+        <div class="text-center">
+          <a href="{{site.baseurl}}/webinars/" class="btn btn-outline-success mt-4">Read More</a>
+        </div>
+        </div>
 
-          <div class="col-lg-6 order-lg-1">
-            <div class="pl-4">
-                <h4 class="display-3 text-white text-center">Webinars</h4>
-            </div>
-                <div class="card shadow shadow-lg--hover mt-5">
-                  <div class="card-body">
-                    <div class="d-flex px-3">
-                      <div>
-                        <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                          <i class="ni ni-satisfied"></i>
-                        </div>
-                      </div>
-                      <div class="pl-4">
-                        <h5 class="title text-success">Awesome Support</h5>
-                        <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                        <a href="#" class="text-success">Learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card shadow shadow-lg--hover mt-5">
-                  <div class="card-body">
-                    <div class="d-flex px-3">
-                      <div>
-                        <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                          <i class="ni ni-active-40"></i>
-                        </div>
-                      </div>
-                      <div class="pl-4">
-                        <h5 class="title text-warning">Modular Components</h5>
-                        <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                        <a href="#" class="text-warning">Learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
     </div>
 
   </div>

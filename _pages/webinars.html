@@ -1,75 +1,24 @@
 ---
-layout: default
+layout: page
 title: Webinars
 permalink: /webinars/
 # video-id: 222773086
-# Video-id is the if of the video from Vimeo. Remove the # to see video in place of slider. 
+# Video-id is the if of the video from Vimeo. Remove the # to see video in place of slider.
 ---
 
 
-<div class="relative mt-100 pb-20">
-    <div class="job-app-image" style="background-image: url({{site.baseurl}}/images/webinars/webinar-1.jpg)"></div>
-            <div class="absolute head-text">
-            <h1 class="text-center">{{page.title}}</h1>
-            </div>
-</div>
 
-
-
-
-<div class="container pb-80">
-    <div class="pt-80">
-    <div class="masonry-container">
-        {% for post in site.webinars %}
-        <a href="{{post.url}}">
-            <div class="item">
-                <div class="thumbnail">
-                    <img src="{{site.baseurl}}{{post.image}}" alt="{{post.title}}">
-                    <div class="caption">
-                    <h4>{{post.title}}</h4>
-                    <p>{{post.description | truncate: 160}}</p>
-                    </div>
-                </div>
-            </div>
-        </a>
-        {% endfor %}
+<div class="row row-grid justify-content-center">
+{% for post in site.webinars %}
+  <div class="col-lg-4">
+    <div class="card shadow border-0">
+      <img src="{{site.baseurl}}{{post.image}}" alt="{{page.title}}">
+      <div class="card-body py-3">
+        <h6 class="text-primary text-uppercase">{{post.title}}</h6>
+        <p class="description mt-3">{{post.description | truncate: 160}}</p>
+        <a href="{{post.url}}" class="btn btn-block btn-primary mt-2 mb-2">Learn more</a>
+      </div>
     </div>
-</div>
-</div>
-
-
-
-<!-- 
-
-<div class="container pb-80 pt-80">
-    {% for post in site.webinars %}
-    <div class="pb-80">
-            <h2 class="text-center underline bold pb-20">{{post.title}}</h2>
-
-           <div class="r no-gap border mb-20 mh-250">
-            <div class="c-5 no-padding">
-              <div class="webinar-image" style="background-image: url({{site.baseurl}}{{post.image}})"></div>
-               
-                <iframe class="webinar-video" src="https://www.youtube.com/embed/{{webinar.video-id}}" frameborder="0"  allowfullscreen></iframe>
-            </div>
-            <div class="c-7 no-padding relative">
-                   <div class="p-20">
-                        <h4 class="bold">{{post.title}}</h4>
-                        <p>{{post.description | truncate: 160}}</p>
-                    </div>
-                    <div class="webinar-footer p-20 absolute">
-                        <a href="{{site.baseurl}}{{post.url}}" class="btn btn-primary btn-sm">View</a>
-                        <a href="" class="btn btn-primary btn-sm">Something</a>
-                    </div>
-            </div>
-            </div>         
-
- <hr>
-</div>
-       {% endfor %}
-</div>
-
-
-
-
- -->
+  </div>
+{% endfor %}
+  </div>
