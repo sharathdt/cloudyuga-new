@@ -199,3 +199,24 @@ img {
     height: 250px;
   }
 }
+
+
+
+.blog {
+
+  .featured-image {
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+  }
+}
+
+.page, .post {
+  .px-4 {
+    @include media-query($on-palm) {
+      padding: 0 !important;
+    }
+  }
+}
