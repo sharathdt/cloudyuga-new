@@ -228,3 +228,20 @@ img {
     }
   }
 }
+
+
+.cont {
+  background-color: rgba(0, 0, 0, 0.22);
+  padding: 30px;
+  h2 {
+    @include media-query($on-palm) {
+      font-size: 1rem;
+    }
+  }
+  img {
+    width: 300px;
+    @include media-query($on-palm) {
+      width: 100px;
+    }
+  }
+}
