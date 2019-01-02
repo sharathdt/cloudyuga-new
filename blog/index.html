@@ -21,7 +21,7 @@ title: Blog
     </ul>
 </div>
 <div class="">
-    <div class="card-body">
+    <div class="">
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tabs-text-1" role="tabpanel" aria-labelledby="tabs-text-1-tab">
 
@@ -31,17 +31,18 @@ title: Blog
                     <div class="col-lg-4 mb-sm">
                       <div class="card shadow border-0">
                         {% if post.image %}
-
                         <div class="featured-image" style="background-image: url({{site.baseurl}}/images/blogs/{{post.image}})"></div>
                         {% else %}
                         <img src="{{site.baseurl}}/images/blogs/blog-fallback.jpg" alt="{{post.title}}">
                         {% endif %}
                         <div class="card-body py-3">
-                          <h6 class="text-primary text-uppercase">{{post.title | truncate: 25}}</h6>
+                          <h6 class="text-primary text-uppercase">{{post.title | truncate: 20}}</h6>
                           <span><small>{{post.date | date: '%b %d, %Y'}}</small></span>
-
-                          <p class="description text-justify mt-3">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
-
+                          {% if post.description %}
+                          <p class="description">{{post.description | strip_html | strip_newlines | truncate: 140}}</p>
+                          {% else %}
+                          <p class="description">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                          {% endif %}
                           <div class="text-right">
                           <a href="{{post.url}}" class="badge badge-success mt-2 mb-2">Read more</a>
                           </div>
@@ -68,10 +69,14 @@ title: Blog
                     <img src="{{site.baseurl}}/images/blogs/blog-fallback.jpg" alt="{{post.title}}">
                     {% endif %}
                     <div class="card-body py-3">
-                      <h6 class="text-primary text-uppercase">{{post.title | truncate: 25}}</h6>
-                      <span><small>{{post.date | date: '%b %d, %Y'}}</small></span>
+                      <h6 class="text-primary text-uppercase">{{post.title | truncate: 20}}</h6>
+                      <span class="meta"><small>{{post.date | date: '%b %d, %Y'}}</small></span>
 
-                      <p class="description text-justify mt-3">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                      {% if post.description %}
+                      <p class="description">{{post.description | strip_html | strip_newlines | truncate: 140}}</p>
+                      {% else %}
+                      <p class="description">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                      {% endif %}
 
                       <div class="text-right">
                       <a href="{{post.url}}" class="badge badge-success mt-2 mb-2">Read more</a>
@@ -98,10 +103,15 @@ title: Blog
                       <img src="{{site.baseurl}}/images/blogs/blog-fallback.jpg" alt="{{post.title}}">
                       {% endif %}
                       <div class="card-body py-3">
-                        <h6 class="text-primary text-uppercase">{{post.title | truncate: 25}}</h6>
-                        <span><small>{{post.date | date: '%b %d, %Y'}}</small></span>
+                        <h6 class="text-primary text-uppercase">{{post.title | truncate: 20}}</h6>
+                        <span class="meta"><small>{{post.date | date: '%b %d, %Y'}}</small></span>
 
-                        <p class="description text-justify mt-3">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                        {% if post.description %}
+                        <p class="description">{{post.description | strip_html | strip_newlines | truncate: 140}}</p>
+                        {% else %}
+                        <p class="description">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                        {% endif %}
+
 
                         <div class="text-right">
                         <a href="{{post.url}}" class="badge badge-success mt-2 mb-2">Read more</a>
@@ -127,10 +137,14 @@ title: Blog
                     <img src="{{site.baseurl}}/images/blogs/blog-fallback.jpg" alt="{{post.title}}">
                     {% endif %}
                     <div class="card-body py-3">
-                      <h6 class="text-primary text-uppercase">{{post.title | truncate: 25}}</h6>
-                      <span><small>{{post.date | date: '%b %d, %Y'}}</small></span>
+                      <h6 class="text-primary text-uppercase">{{post.title | truncate: 20}}</h6>
+                      <span class="meta"><small>{{post.date | date: '%b %d, %Y'}}</small></span>
 
-                      <p class="description text-justify mt-3">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                      {% if post.description %}
+                      <p class="description">{{post.description | strip_html | strip_newlines | truncate: 140}}</p>
+                      {% else %}
+                      <p class="description">{{post.content | strip_html | strip_newlines | truncate: 140}}</p>
+                      {% endif %}
 
                       <div class="text-right">
                       <a href="{{post.url}}" class="badge badge-success mt-2 mb-2">Read more</a>

@@ -189,13 +189,7 @@ img {
 
 
 .pages {
-  .separator {
-    z-index: 0;
-  }
 
-  .mart-300 {
-    margin-top: -300px;
-  }
 }
 
 
@@ -247,8 +241,21 @@ img {
 }
 
 .pages {
+  .separator {
+    z-index: 0;
+      @include media-query($on-palm) {
+        display: none;
+      }
+  }
+
+  .mart-300 {
+    margin-top: -300px;
+  }
   .section-profile-cover {
     height: 450px;
+    @include media-query($on-palm) {
+      height: 230px;
+    }
   }
 }
 .page-title {
