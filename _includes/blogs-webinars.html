@@ -1,6 +1,6 @@
 <section class="section section-lg bg-gradient-default">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center py-md">
       <div class="col-lg-6 order-lg-1">
             <div class="pl-4">
                 <h4 class="display-3 text-white">Latest Blogs</h4>
@@ -11,7 +11,7 @@
               <div class="card-body">
                 <div class="d-flex px-3">
                   <div class="">
-                    <h5 class="title text-success">{{post.title | truncate: 40}}</h5>
+                    <h5 class="title text-success">{{post.title | truncate: 35}}</h5>
                       {% if post.description %}
                       <p>{{post.description | strip_html | strip_newlines | truncate: 80}}</p>
                       {% else %}

@@ -3,15 +3,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Cloudyuga</title>
   <!-- Favicon -->
-  <link href="{{site.baseurl}}/favicon.ico" rel="icon" type="image/png">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
   <!-- Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,800,900" rel="stylesheet">
   <!-- Icons -->
   <link href="{{site.baseurl}}/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  {% seo %}
+  
   <!-- Argon CSS -->
   <link type="text/css" href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+
   <!-- Docs CSS -->
   <!-- <link type="text/css" href="../assets/css/docs.min.css" rel="stylesheet"> -->
+
+  {% if page.url contains "/about/" %}
+  <link rel="dns-prefetch" href="//embed.typeform.com">
+  <link rel="dns-prefetch" href="//www.google.com">
+  <link rel="prefetch" href="https://cloudyuga.typeform.com/to/pUY7fb">
+  <link rel="prefetch" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.4775030809581!2d77.59076991349004!3d12.910290222055757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1511fe717de1%3A0x8a45569b1804a6d0!2zMTLCsDU0JzM3LjUiTiA3N8KwMzUnMjcuMyJF!5e0!3m2!1sen!2sin!4v1534244258361">
+  {% endif %}
 </head>
